@@ -1,8 +1,6 @@
-### Hi there
+### Hi there! :heart::paw_prints::robot:
 
-Check out my website!
-
-[ffasilva.github.io](https://ffasilva.github.io) 
+Check out my website: [ffasilva.github.io](https://ffasilva.github.io) 
 
 
 <!--
