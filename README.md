@@ -3,12 +3,12 @@
 Check out my website: [ffasilva.github.io](https://ffasilva.github.io)
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ffasilva" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ffasilva&rank=S,AAA,AA,A,B&column=-1&theme=nord" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ffasilva" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ffasilva&layout=compact" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ffasilva&include_all_commits=true&hide=stars&show=prs_merged&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ffasilva&layout=compact&theme=tokyonight" />
 </p>
 
 <!--
