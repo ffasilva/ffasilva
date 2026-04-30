@@ -1,8 +1,8 @@
-name: Update README cards
+name: Update GitHub Stats cards
 
 on:
   schedule:
-    - cron: "48 * * * *" # "0 0 * * *" # Runs once daily at midnight
+    - cron: "0 0 * * *" # Runs once daily at midnight
       timezone: "Europe/London"
   workflow_dispatch:
 
