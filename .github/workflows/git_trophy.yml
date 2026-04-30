@@ -1,33 +1,6 @@
-name: Update GitHub trophy card
-
-on:
-  schedule:
-    - cron: "0 0 * * *" # Runs once daily at midnight
-      timezone: "Europe/London"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Generate stats card
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          card: trophy
-          options: username=${{ github.repository_owner }}&rank=S,AAA,AA,A,B&column=-1&theme=nord
-          path: profile/trophy.svg
-          token: ${{ secrets.STATS_SELF_DEPLOY }}
-
-      - name: Commit cards
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update GitHub trophy card" || exit 0
-          git push
+- name: Generate trophy
+  uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+  with:
+    username: ffasilva
+    output_path:  profile/trophy.svg
+    token: ${{ secrets.GITHUB_TOKEN }}
