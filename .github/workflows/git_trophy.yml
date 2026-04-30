@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Generate trophy card
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        uses: Erik-Donath/github-profile-trophy-action@v1.0.0
         with:
           options: 'username=${{ github.repository_owner }}&rank=S,AAA,AA,A,B&column=-1&theme=nord'
           path: profile/trophy.svg
