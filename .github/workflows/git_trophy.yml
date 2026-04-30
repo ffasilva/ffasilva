@@ -16,9 +16,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate stats card
+      - name: Generate trophy card
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
-          username: ffasilva
-          output_path:  profile/trophy.svg
+          options: 'username=${{ github.repository_owner }}&rank=S,AAA,AA,A,B&column=-1&theme=nord'
+          path: profile/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
