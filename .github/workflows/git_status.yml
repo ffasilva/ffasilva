@@ -1,4 +1,4 @@
-name: Update GitHub Stats cards
+name: Update README cards
 
 on:
   schedule:
@@ -30,6 +30,13 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight
           path: profile/top-langs.svg
+          token: ${{ secrets.STATS_SELF_DEPLOY }}
+
+      - name: Generate trophy card
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: 'username=${{ github.repository_owner }}&rank=S,AAA,AA,A,B&column=-1&theme=nord'
+          path: profile/trophy.svg
           token: ${{ secrets.STATS_SELF_DEPLOY }}
 
       - name: Commit cards
