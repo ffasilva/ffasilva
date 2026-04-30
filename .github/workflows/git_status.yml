@@ -30,7 +30,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.stats-self-deploy }}
 
       - name: Commit cards
         run: |
