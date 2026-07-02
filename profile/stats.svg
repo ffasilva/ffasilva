@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Frederico Fernandes Afonso Silva's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Commits  : 811, Total PRs: 35, Total PRs Merged: 16, Total Issues: 12, Contributed to (last year): 15</desc>
+        <desc id="descId">Total Commits  : 811, Total PRs: 35, Total PRs Merged: 16, Total Issues: 12, Contributed to (last year): 17</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -222,7 +222,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >15</text>
+      >17</text>
     </g>
   </g>
     </svg>
